@@ -56,6 +56,8 @@ class QuestionViewController: UIViewController {
         userDefault.removeObject(forKey: "add")
         
         userDefault.set([], forKey: "add")
+        
+    showAlert(message: "問題を削除しました")
     }
     
     /*
