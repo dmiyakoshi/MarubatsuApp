@@ -49,7 +49,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Mp-q4-eWB">
-                                <rect key="frame" x="20" y="52" width="350" height="100"/>
+                                <rect key="frame" x="20" y="264" width="350" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="cgd-zM-8o0"/>
                                 </constraints>
@@ -57,20 +57,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XrP-0e-JYL">
+                                <rect key="frame" x="144" y="84" width="102" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="問題を作成">
+                                    <color key="titleColor" red="1" green="0.74233656280000004" blue="0.22920713619999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="2Yi-co-4cY" firstAttribute="width" secondItem="Tnt-8p-Zpq" secondAttribute="width" id="388-EW-WzL"/>
+                            <constraint firstItem="8Mp-q4-eWB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="220" id="AJ4-dD-IfU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Mp-q4-eWB" secondAttribute="trailing" constant="20" id="EnS-M1-zt5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tnt-8p-Zpq" secondAttribute="trailing" constant="20" id="Iye-1k-LDy"/>
-                            <constraint firstItem="8Mp-q4-eWB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="NdX-fp-Xds"/>
                             <constraint firstItem="2Yi-co-4cY" firstAttribute="height" secondItem="Tnt-8p-Zpq" secondAttribute="height" id="QZA-Lz-hZY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Yi-co-4cY" secondAttribute="bottom" constant="20" id="QqZ-TB-5Sc"/>
                             <constraint firstItem="Tnt-8p-Zpq" firstAttribute="leading" secondItem="2Yi-co-4cY" secondAttribute="trailing" constant="8" id="g9R-wc-LgJ"/>
                             <constraint firstItem="2Yi-co-4cY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hSv-Yd-Spc"/>
+                            <constraint firstItem="XrP-0e-JYL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ijG-pw-6uS"/>
                             <constraint firstItem="8Mp-q4-eWB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="imw-oT-hOt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tnt-8p-Zpq" secondAttribute="bottom" constant="20" id="lZ1-4s-3Gu"/>
+                            <constraint firstItem="XrP-0e-JYL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="pgv-3M-S7L"/>
                         </constraints>
                     </view>
                     <connections>
@@ -80,6 +90,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20" y="66.824644549763036"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dmQ-9W-RQv">
+            <objects>
+                <viewController id="96B-m7-y80" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WW5-V7-g7E">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="AiY-iY-ph7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="755-Fm-pcr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="938" y="67"/>
         </scene>
     </scenes>
     <resources>
