@@ -13,24 +13,23 @@ class ViewController: UIViewController {
     
     var currentQuestionNum: Int = 0
     
-    let questions: [[String: Any]] = [
-        [
-            "question": "iPhoneアプリを開発する統合環境はZcodeである",
-            "answer": false
-        ],
-        [
-            "question": "Xcode画面の右側にはユーティリティーズがある",
-            "answer": true
-        ],
-        [
-            "question": "UILabelは文字列を表示する際に利用する",
-            "answer": true
-        ]
+    var questions: [[String: Any]] = [
+//        [
+//            "question": "iPhoneアプリを開発する統合環境はZcodeである",
+//            "answer": false
+//        ],
+//        [
+//            "question": "Xcode画面の右側にはユーティリティーズがある",
+//            "answer": true
+//        ],
+//        [
+//            "question": "UILabelは文字列を表示する際に利用する",
+//            "answer": true
+//        ]
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         showQuestion()
     }
     
@@ -43,10 +42,14 @@ class ViewController: UIViewController {
     }
     
     func showQuestion() {
-        let question = questions[currentQuestionNum]
-        
-        if let que = question["question"] as? String {
-            questionLabel.text = que
+        if questions.count != 0 {
+            let question = questions[currentQuestionNum]
+            
+            if let que = question["question"] as? String {
+                questionLabel.text = que
+            }
+        }else {
+            questionLabel.text = "問題がありません、問題を作ってみましょう"
         }
     }
     
@@ -83,4 +86,15 @@ class ViewController: UIViewController {
         present(alert, animated: true)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let userDefaults = UserDefaults.standard
+        
+        if userDefaults.object(forKey: "add") != nil {
+            questions = userDefaults.object(forKey: "add") as! [[String: Any]]
+        }
+        
+        showQuestion()
+    }
 }
