@@ -57,7 +57,7 @@ class QuestionViewController: UIViewController {
         
         userDefault.set([], forKey: "add")
         
-    showAlert(message: "問題を削除しました")
+        showAlert(message: "問題を削除しました")
     }
     
     /*
